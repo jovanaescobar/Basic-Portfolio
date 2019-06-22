@@ -28,7 +28,8 @@ header{
     font-size: 18px;
 }
 
-#Main-Menu{
+#main-Menu{
+    font-family: Arial, Helvetica, sans-serif;
     float: right
     font-style: normal;
     height: 300px; 
@@ -36,6 +37,7 @@ header{
     margin-top:75px;
     
     
+
 }
 
 h2 {
@@ -56,35 +58,76 @@ hr {
 }
 
 
-/* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 5px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 2px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 3px; /* Add a top margin */
-    margin-bottom: 5px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%; 
+    padding: 5px;  
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+    margin-top: 3px; 
+    margin-bottom: 5px; 
+    resize: vertical 
+
   }
+
+  footer {
+    bottom: 15px;
+    background-color:gray;
+    text-align: center;
+    border-top: 6px solid: black;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+
+
+
   
-  /* Style the submit button with a specific background color etc */
   input[type=submit] {
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    background-color: cadetblue;
   }
   
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-
-  }
-  
-  /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    background-color: white;
+    padding: 4px;
   }
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create two equal columns that sits next to each other */
+  .column {
+    flex: 50%;
+    padding: 0 4px;
+  }
+  
+ 
+
+  .column {
+    -ms-flex: 50%; /* IE 10 */
+    flex: 50%;
+    padding: 0 4px;
+    
+  }
+
+  .row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+    
+  }
+
+
