@@ -12,39 +12,45 @@
     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Electrolize|Gayathri|Oleo+Script+Swash+Caps|Rock+Salt&display=swap" rel="stylesheet">
 </head>
 
-<header><h1 style=color:white> Jovana Escobar</h1></header>
+<body>
 
-<nav>
-        <div id="main-Menu">
-                <a href="index.html">About</a> <a href="portfolio.html">Portfolio</a> <a href="contact.html">Contact</a>
+    <nav>
+        <div class="navWrapper">
+            <div class="navLeft">
+                <h1>Jovana S.</h1>
+            </div>
+            <div class="navRight">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        </nav>
-        <body>
+    </nav>
 
-                <div id="container">
-                       
-                    <h1 style="color:cadetblue">Contact</h1>
-                    
-                 <hr>
-                 <div class="container">
-                        <form action="action_page.php">
-                      
-                          <label for="name">Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="John Smith">
-                      
-                          <label for="email">Email</label>
-                          <input type="text" id="email" name="email" placeholder="example@gmail.com">
-                      
-                          
-                      
-                          <label for="message">Message</label>
-                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
-                      
-                          <input type="submit" value="Submit">
-                      
-                        </form>
-                      </div>
-                </div>
-                </body>
-                </html>
-                <footer>Copyright</footer>
+    <section>
+        <div class="contact">
+            <h2>Contact</h2>
+            <hr>
+            <div class="form">
+                <form method="post" action="#" name="contactform" id="contactform">
+                    <p>Name</p>
+                    <input name="name" type="text" onfocus="if(this.value == 'John Smith') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'John Smith'; }" value="John Smith">
+                    <br><br>
+                    <p>Email</p>
+                    <input name="email" type="text" onfocus="if(this.value == 'example@gmail.com') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'example@gmail.com'; }" value="example@gmail.com">
+                    <br><br><br>
+                    <p>Message</p>
+                    <textarea name="comments" type="text" onfocus="if(this.value == 'Type your message...') { this.value = ''; }" onblur="if(this.value == '') { this.value = 'Type your message...'; }" value="Type your message..."></textarea>
+                    <br><br>
+                    <input type="submit" id="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>2019 &copy; JSE</footer>
+
+</body>
+</html>
